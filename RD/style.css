@@ -134,3 +134,65 @@ main p {
 .menu-op.abrir {
     display: block;
 }
+
+.criar-conta {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 40px 20px;
+}
+
+.caixa-conta label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+.caixa-conta input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.caixa-conta input:focus {
+    border-color: #ff1900;
+}
+
+.caixa-conta button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 13px;
+    background-color: #ff1900;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.caixa-conta button:hover {
+    background-color: #b80500;
+}
+
+.login-link {
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #ff1900;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
