@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #ff1900;
+    height: 90px;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 55px;
+    height: auto;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 32px;
+    margin: 0;
+}
+
+nav {
+    background-color: #e10100;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    gap: 40px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcccc;
+}
+
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+main h2 {
+    font-size: 32px;
+    color: #222;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: #e10600;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.noticia-img {
+    width: 70%;
+    max-width: 900px;
+    display: block;
+    border-radius: 5px;
+}
+
+main p {
+    width: 70%;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+.botao-menu {
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-op {
+    display: none;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: 0px;
+    width: 320px;
+    height: 1000px;
+    background-color: #ff1900;
+    padding: 25px;
+    box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.menu-op a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.menu-op a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    padding-left: 18px;
+}
+
+.menu-op.abrir {
+    display: block;
+}
+
+.criar-conta {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 40px 20px;
+}
+
+.caixa-conta label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+.caixa-conta input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.caixa-conta input:focus {
+    border-color: #ff1900;
+}
+
+.caixa-conta button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 13px;
+    background-color: #ff1900;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.caixa-conta button:hover {
+    background-color: #b80500;
+}
+
+.login-link {
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #ff1900;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.login-box {
+    width: 400px;
+    padding: 35px;
+    background-color: white;
+    border: 2px solid #e30613;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.login-box h2 {
+    text-align: center;
+    color: #e30613;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.login-box p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.login-box input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-box input:focus {
+    outline: none;
+    border-color: #e30613;
+}
+
+.login-box button {
+    padding: 12px;
+    background-color: #ff1900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #b8000b;
+}
+
+.criar-conta {
+    margin-top: 25px;
+}
+
+.criar-conta a {
+    color: #e30613;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.criar-conta a:hover {
+    text-decoration: underline;
+}
